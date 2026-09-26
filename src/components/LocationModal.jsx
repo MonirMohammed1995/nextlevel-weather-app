@@ -44,7 +44,7 @@ const LocationModal = ({ onClose }) => {
   const handleGeoLocations = () => {
     if (!navigator.geolocation) {
       setError("Geolocation is not supported by your browser");
-      return;
+      return
     }
 
     navigator.geolocation.getCurrentPosition(
